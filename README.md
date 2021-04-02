@@ -62,6 +62,7 @@ Desafio online de programação do Grupo Movile.
   **Explanation 1**
   
   Essa senha pode ficar forte adicionando um número e um caractere especial.
+  
   **Sample Input 2**
   ```
   8
