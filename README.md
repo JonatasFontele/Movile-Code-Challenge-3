@@ -24,6 +24,7 @@ Desafio online de programação do Grupo Movile.
   * Para não deixar um cliente informar uma senha fraca precisamos informá-lo qual o valor mínimo de caracteres que precisam ser informados para que a senha seja considerada forte.
 
   **Input Format**
+  
   O programa precisa receber dois parâmetros:
   * Int n = Tamanho da senha para ser validada
   * String password = Senha para ser testada.
@@ -46,6 +47,7 @@ Desafio online de programação do Grupo Movile.
   3
   ```
   **Explanation 0**
+  
   Essa senha pode ficar forte adicionando 3 caracteres a mais. Eu posso adicionar "2#A", nesse caso ela ficaria qwe2#A, tonando assim uma senha forte.
 
   **Sample Input 1**
@@ -58,6 +60,7 @@ Desafio online de programação do Grupo Movile.
   2
   ```
   **Explanation 1**
+  
   Essa senha pode ficar forte adicionando um número e um caractere especial.
   **Sample Input 2**
   ```
@@ -69,4 +72,5 @@ Desafio online de programação do Grupo Movile.
   0
   ```
   **Explanation 2**
+  
   Senha atende todas as condições acima, portanto pode ser considerada uma senha forte.
