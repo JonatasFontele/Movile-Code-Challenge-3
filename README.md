@@ -15,7 +15,7 @@ Desafio online de programação do Grupo Movile.
 
   Na Movile Pay, assim como na maioria das empresas que estão na web, precisamos garantir que as senhas informadas sejam fortes e difíceis de quebrar.
 
-  Podemos consider uma senha forte aquela que atenda os seguintes requisitos:
+  Podemos considerar uma senha forte aquela que atenda os seguintes requisitos:
   * Tamanho mínimo de 6 caracteres.
   * Deve conter pelo menos um dígito numérico [0-9]
   * Deve conter pelo menos um caractere minúsculo [a-z]
