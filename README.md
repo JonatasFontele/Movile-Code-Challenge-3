@@ -13,7 +13,7 @@ Desafio online de programação do Grupo Movile.
   * This algorithm only got 7 out of 8 cases.
   * Used [Regex](https://docs.python.org/3/library/re.html) to solve it.
 
-  > Na Movile Pay, assim como na maioria das empresas que estão na web, precisamos garantir que as senhas informadas sejam fortes e difíceis de quebrar.
+  Na Movile Pay, assim como na maioria das empresas que estão na web, precisamos garantir que as senhas informadas sejam fortes e difíceis de quebrar.
 
   Podemos consideramos uma senha forte aquela que atenda os seguintes requisitos:
   * Tamanho mínimo de 6 caracteres.
