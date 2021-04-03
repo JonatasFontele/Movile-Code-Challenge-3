@@ -7,6 +7,68 @@
 
 Desafio online de programação do Grupo Movile.
 
+> ## [**Reuniões Movilepay**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/reunioes-movilepay)
+
+* reunioes_movilepay.py
+  
+  Na MovilePay, assim como provavelmente na maioria das empresas, são necessárias reuniões, apresentações e encontros entre mais de uma pessoa para que alinhamentos e decisões sejam tomados.
+
+  Nos dias atuais e, dado todo o contexto global que estamos vivendo, no qual as pessoas estão tendo que se reinventar por conta da pandemia que esta terrível doença que é o COVID-19 acarretou, as reuniões e uma boa organização para tal têm um papel ainda mais fundamental.
+
+  No entanto, apesar de termos nos adaptado a esse novo contexto, onde reuniões são cada vez mais necessárias, gostaríamos da sua ajuda para melhorar ainda mais nosso dia a dia, construindo uma ferramenta capaz de prever o melhor horário de uma reunião dado um grupo de pessoas e suas respectivas agendas para um determinado dia.
+
+  **Input Format**
+
+  Você vai receber como entrada o número de pessoas (**N**, com 0 < **N** <= 1000), a quantidade de horas que a reunião que desejamos marcar vai durar (**T**, com 0 < **T** < 24), e a agenda de cada pessoa em um determinado dia da semana, com cada uma das suas reuniões (**a**,**b**), que será no formato:
+
+  a1,b1 a2,b2 a3,b3 … aX,bY
+
+  Por exemplo: "0,2 6,7 12,14 20,22 13,15", onde 0,2 significa que a reunião inicia as 0h e se encerra as 2h.
+
+  Onde: **aJ**: É a hora em que uma reunião **J** inicia na agenda da pessoa **a** 
+  **bJ**: É a hora em que uma reunião **J** se encerra na agenda da pessoa **a**
+
+  **Constraints**
+  * A agenda de uma pessoa pode ter um número qualquer de reuniões nesse dia.
+  * Não irão existir nessa entrada valores concorrentes para uma agenda de uma pessoa (como por exemplo 1,3 2,4), em que reuniões possuam intervalos de horários concomitantes.
+  * Os horários das reuniões não estarão necessariamente ordenados para uma determinada pessoa. Por exemplo, 5,6 por vir antes de 1,2.
+  * Os valores das horas de cada reunião são inteiros que variam de **0 até 23**, representando todas as horas de um dia.
+  * Os valores de cada reunião serão ordenados, ou seja, **a < b** para **a,b**.
+  
+  **Output Format**
+
+  Você deverá imprimir o primeiro horário possível em que todas as N pessoas na entrada conseguem participar da reunião de T horas, onde X é a hora de início e Y a hora de fim:
+
+  **O primeiro horario possivel para a reuniao eh das Xh00 as Yh00**
+
+  Caso não seja possível nenhum horário que contemple a agenda de todos, deverá imprimir a mensagem:
+
+  **Nao existe horario no dia para marcar a reuniao**
+
+  **Sample Input 0**
+  ```
+  2
+  3
+  1,4 12,14 6,8 10,12
+  2,3 5,6 20,22
+  ```
+  **Sample Output 0**
+  ```
+  O primeiro horario possivel para a reuniao eh das 14h00 as 17h00
+  ```
+  **Sample Input 1**
+  ```
+  3
+  5
+  12,14 20,23
+  0,20
+  1,2 3,4
+  ```
+  **Sample Output 1**
+  ```
+  Nao existe horario no dia para marcar a reuniao
+  ```
+
 > ## [**Senha Forte Movilepay**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/senha-forte-movile-pay)
 
 * [senha_forte_movilepay.py](https://github.com/JonatasFontele/movile-code-challenge-3/blob/main/senha_forte_movilepay.py)
@@ -77,7 +139,7 @@ Desafio online de programação do Grupo Movile.
 
 > ## [**Promobomb Movilepay & iFood**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/promobomb-movilepay-ifood)
 
-* [promobomb_movilepay_e_ifood.py](https://github.com/JonatasFontele/movile-code-challenge-3/blob/main/senha_forte_movilepay.py)
+* promobomb_movilepay_e_ifood.py
   
   O ifood está engajado diariamente a atrair novos clientes. Um dos meios de atingir esse objetivo é criando as promo-bombs, uma oferta relâmpago, com algum tipo de desconto ao cliente.
 
