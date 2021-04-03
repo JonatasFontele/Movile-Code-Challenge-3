@@ -10,7 +10,6 @@ Desafio online de programação do Grupo Movile.
 > ## [**Senha Forte Movilepay**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/senha-forte-movile-pay)
 
 * [senha_forte_movilepay.py](https://github.com/JonatasFontele/movile-code-challenge-3/blob/main/senha_forte_movilepay.py)
-  * This algorithm only got 7 out of 8 cases.
   * Used [Regex](https://docs.python.org/3/library/re.html) to solve it.
 
   Na Movile Pay, assim como na maioria das empresas que estão na web, precisamos garantir que as senhas informadas sejam fortes e difíceis de quebrar.
