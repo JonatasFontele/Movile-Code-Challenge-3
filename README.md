@@ -301,6 +301,76 @@ Desafio online de programação do Grupo Movile.
   6. valor: 42, 15 dias para expirar
   7. valor: 3, 100 dias para expirar
   
+  
+> ## [**Quantidade possível de saques Movilepay**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/quantidade-possivel-de-saques-movilepay)
+
+* saldo_promocional_movilepay.py
+  
+  Em instituições financeiras, como a **MovilePay**, é comum existir a opção de **saque** de dinheiro em terminais bancários (ATM), para isso, é calculada uma combinação possível de notas para que o saque possa ser efetuado dado um montante desejado.
+
+  Escreva uma função que retorne as diferentes maneiras de mostrar quantas combinações de saque pode ser feito a partir de um valor informado.
+
+  Por exemplo, existem **3** combinações possíveis para sacar o valor de **4** com as cédulas de **1** e **2**:
+
+  1. 1+1+1+1
+  2. 1+1+2
+  3. 2+2
+  
+  **Input Format**
+
+  Você deverá ler um número que representa o valor desejado para o saque (**N**, com 0 < **N** <= 1000) e um array de números inteiros separados por espaço informando as cédulas existentes no ATM (**C**, sendo **C** um número inteiro menor que o máximo de **N**)
+
+  **Constraints**
+
+  * A ordem das combinações de saque não importam: 1+1+2 == 2+1+1;
+  * Assuma também, que temos um limite infinito de cédulas/moedas para o saque;
+  * Sua função deve receber o montante total para o saque e uma lista de inteiros que equivalem às cédulas/moedas únicas;
+  * O valor do saque deve ser um número entre 0 e 1000;
+  * A lista de cédulas disponíveis deve ser de valores inteiros separados por espaço;
+  
+  **Output Format**
+
+  A saída do código deve ser o número da quantidade de maneiras possíveis para se sacar o dinheiro informado.
+
+  Se o valor não corresponder aos limites informados, deverá retornar: -1.
+
+  **Sample Input 0**
+  ```
+  4
+  1 2
+  ```
+  **Sample Output 0**
+  ```
+  3
+  ```
+  **Sample Input 1**
+  ```
+  10
+  2 5
+  ```
+  **Sample Output 1**
+  ```
+  2
+  ```
+  **Sample Input 2**
+  ```
+  -100
+  1
+  ```
+  **Sample Output 2**
+  ```
+  -1
+  ```
+  **Sample Input 3**
+  ```
+  1234
+  1 2 3 4
+  ```
+  **Sample Output 3**
+  ```
+  -1
+  ```
+
 
 > ## [**Promobomb Movilepay & iFood**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/promobomb-movilepay-ifood)
 
