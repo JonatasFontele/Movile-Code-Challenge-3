@@ -69,6 +69,7 @@ Desafio online de programação do Grupo Movile.
   Nao existe horario no dia para marcar a reuniao
   ```
 
+
 > ## [**Senha Forte Movilepay**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/senha-forte-movile-pay)
 
 * [senha_forte_movilepay.py](https://github.com/JonatasFontele/movile-code-challenge-3/blob/main/senha_forte_movilepay.py)
@@ -136,6 +137,169 @@ Desafio online de programação do Grupo Movile.
   **Explanation 2**
   
   Senha atende todas as condições acima, portanto pode ser considerada uma senha forte.
+  
+  
+> ## [**Saldo Promocional Movilepay**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/saldo-promocional-movilepay)
+
+* saldo_promocional_movilepay.py
+  Uma das atividades da MovilePay é a disponibilização de saldos promocionais para seus usuários. Os saldos promocionais podem ser disponibilizados em uma carteira digital através de depósitos e possuem um período de validade para serem consumidos.
+
+  Para ser justo na hora de uma compra utilizando esses saldos promocionais, considere a seguinte regra para o consumo dos saldos:
+
+  * Os saldos devem ser consumidos com a prioridade por **menor quantidade de dias para a expiração**.
+  * Em caso de empate no primeiro critério, **deve ser considerado como prioridade o item de menor valor de depósito**.
+  * Caso o saldo disponível somando todos os depósitos seja menor do que o valor da compra, a compra não deve ser efetuada e o saldo não deve ser consumido.
+  
+  Dado uma lista composta por D inteiros representando depósitos, e uma lista composta por C quantidade de compras, imprima uma lista com o estado final dos valores de cada um dos depósitos.
+
+  **Input Format**
+
+  A primeira linha contém um inteiro D que representa a quantidade de depósitos de uma determinada carteira.
+
+  As DV linhas subsequentes representam um depósito no formato DV E - DV: representando o valor do depósito. - E: representando a quantidade de dias até a expiração do depósito.
+
+  Em seguida temos um valor C representando a quantidade de compras. As C linhas subsequentes representam tentativas de compras no formato CV - CV: representando um valor de uma compra.
+
+  **Constraints**
+
+  1 ≤ DV ≤ 5000
+
+  0 ≤ E ≤ 5000
+
+  1 ≤ C ≤ 5000
+
+  1 ≤ CV ≤ 5000
+
+  **Output Format**
+
+  Imprima a lista de depósitos contendo o valor final de todos os D depósitos após o consumo de saldo pelas C compras, ordenados na ordem de consumo proposta no exericicio.
+
+  **Sample Input 0**
+  ```
+  4
+  30 1
+  43 1
+  1 3
+  123 2
+  2
+  40
+  30
+  ```
+  **Sample Output 0**
+  ```
+  0
+  3 
+  123
+  1
+  ```
+  **Explanation 0**
+
+  **4 depósitos**:
+
+  1. valor: 30, 1 dia para expirar
+  2. valor: 43, 1 dia para expirar
+  3. valor: 1, 3 dias para expirar
+  4. valor: 123, 2 dias para expirar
+  
+  **após a ordenação**:
+
+  1. valor: 30, 1 dia para expirar
+  2. valor: 43, 1 dia para expirar
+  3. valor: 123, 2 dias para expirar
+  4. valor: 1, 3 dias para expirar
+ 
+  **2 compras**:
+
+  1. valor 40
+  2. valor 30
+  
+  **Depósitos após primeira compra**:
+
+  1. valor: 0, 1 dia para expirar
+  2. valor: 33, 1 dia para expirar
+  3. valor: 123, 2 dias para expirar
+  4. valor: 1, 3 dias para expirar
+  
+  **Depósitos após segunda compra**:
+
+  1. valor: 0, 1 dia para expirar
+  2. valor: 3, 1 dia para expirar
+  3. valor: 123, 2 dias para expirar
+  4. valor: 1, 3 dias para expirar
+  
+  **Sample Input 1**
+  ```
+  7
+  1 15
+  20 1
+  1 1
+  100 15
+  35 0
+  3 100
+  5 2
+  3
+  5000
+  100
+  20
+  ```
+  **Sample Output 1**
+  ```
+  0
+  0
+  0
+  0
+  0
+  42
+  3
+  ```
+  **Explanation 1**
+
+  **7 depósitos**:
+
+  1. valor: 1, 15 dia para expirar
+  2. valor: 20, 1 dias para expirar
+  3. valor: 1, 1 dia para expirar
+  4. valor: 100, 15 dias para expirar
+  5. valor: 35, 0 dias para expirar
+  6. valor: 3, 100 dias para expirar
+  7. valor: 5, 2 dias para expirar
+  
+  **após a ordenação**:
+
+  1. valor: 35, 0 dias para expirar
+  2. valor: 1, 1 dia para expirar
+  3. valor: 20, 1 dias para expirar
+  4. valor: 5, 2 dias para expirar
+  5. valor: 1, 15 dia para expirar
+  6. valor: 100, 15 dias para expirar
+  7. valor: 3, 100 dias para expirar
+  
+  **3 compras**:
+
+  1. valor 5000 - Rejeitada pois não há valor suficiente
+  2. valor 100
+  3. valor 20
+  
+  **Depósitos após segunda compra**:
+
+  1. valor: 0, 0 dias para expirar
+  2. valor: 0, 1 dia para expirar
+  3. valor: 0, 1 dias para expirar
+  4. valor: 0, 2 dias para expirar
+  5. valor: 0, 15 dia para expirar
+  6. valor: 62, 15 dias para expirar
+  7. valor: 3, 100 dias para expirar
+  
+  **Depósitos após terceira compra**:
+
+  1. valor: 0, 0 dias para expirar
+  2. valor: 0, 1 dia para expirar
+  3. valor: 0, 1 dias para expirar
+  4. valor: 0, 2 dias para expirar
+  5. valor: 0, 15 dia para expirar
+  6. valor: 42, 15 dias para expirar
+  7. valor: 3, 100 dias para expirar
+  
 
 > ## [**Promobomb Movilepay & iFood**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/promobomb-movilepay-ifood)
 
