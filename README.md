@@ -74,3 +74,56 @@ Desafio online de programação do Grupo Movile.
   **Explanation 2**
   
   Senha atende todas as condições acima, portanto pode ser considerada uma senha forte.
+
+> ## [**Promobomb Movilepay & iFood**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/promobomb-movilepay-ifood)
+
+* [promobomb_movilepay_e_ifood.py](https://github.com/JonatasFontele/movile-code-challenge-3/blob/main/senha_forte_movilepay.py)
+  
+  O ifood está engajado diariamente a atrair novos clientes. Um dos meios de atingir esse objetivo é criando as promo-bombs, uma oferta relâmpago, com algum tipo de desconto ao cliente.
+
+  Você foi escolhido para ajudar a Movilepay a criar uma plataforma que maximize o lucro das ações para o iFood. Tendo em mente todas as ações possíveis planejadas pelo time de comercial do iFood, você precisará selecionar as **três ações que gerem um maior lucro, de acordo com as duas respectivas funções abaixo**:
+  * R(x) = 4x²
+  * C(x) = 100x
+
+  **R(x)** é a função da receita obtida pelo iFood, em função do número de pessoas x da ação.
+
+  **C(x)** é a função do custo necessário em função do número de pessoas x da ação.
+
+  **Input Format**
+
+  Você vai receber como entrada o número de ações **N**, e em sequência N linhas, onde cada linha representa uma ação **A**, que terá o formato:
+
+  **A: 'a' x**
+
+  Onde:
+  * **a**: Nome da ação, que estará entre aspas simples.
+  * **x**: Número de pessoas que serão impactadas.
+ 
+  Por exemplo:
+
+  'Acao do comercial' 2000
+
+  **Constraints**
+  * 3 <= N <= 1000
+  * 0 < x <= 1000000
+  * Em caso de empate entre duas ou mais ações, selecioná-las pela ordem de entrada, na ordem em que aparecem primeiro.
+  
+  **Output Format**
+
+  Você deverá imprimir a posição de entrada das três ações que maximizem o lucro em função do número de pessoas.
+
+  **Sample Input 0**
+  ```
+  5
+  'Acao maluca' 3000
+  'Acao ifood' 5000
+  'Acao movilepay' 5005
+  'Acao simpla' 10
+  'Acao movile' 50
+  ```
+  **Sample Output 0**
+  ```
+  3
+  2
+  1
+  ```
