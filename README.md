@@ -304,7 +304,7 @@ Desafio online de programação do Grupo Movile.
   
 > ## [**Quantidade possível de saques Movilepay**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/quantidade-possivel-de-saques-movilepay)
 
-* saldo_promocional_movilepay.py
+* quantidade_possivel_de_saques_movilepay.py
   
   Em instituições financeiras, como a **MovilePay**, é comum existir a opção de **saque** de dinheiro em terminais bancários (ATM), para isso, é calculada uma combinação possível de notas para que o saque possa ser efetuado dado um montante desejado.
 
