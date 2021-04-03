@@ -424,3 +424,59 @@ Desafio online de programação do Grupo Movile.
   2
   1
   ```
+  
+  
+> ## [**Conectividade entre datacenters Movile**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/conectividade-entre-datacenters-movile)
+
+* conectividade_entre_datacenters_movile.py
+
+  A Movile como uma holding é uma empresa que preza para interação entre as empresas do grupo, tanto que um serviço de uma das empresas pode e deve ser utilizado por outras empresas do grupo sempre que necessário.
+
+  As integrações entre os serviços são feitas através da rede de computadores. Para garantir que os serviços prestados ao usuário final seja rápido e de qualidade, é necessário que a conectividade entre os clientes e os servidores seja impecável.
+
+  Desse modo, a Movile montou um plano juntamente com os administradores dos datacenters das empresas do grupo com objetivo de implantar uma tecnologia nova de rotas para conectar todos os datacenters do grupo Movile.
+
+  Os administradores dos datacenters fornecerão uma lista de rotas entre os servidores da Movile e seus custos de implantação.
+
+  Todos os datacenters devem estar dentro dessa nova rede e todos devem estar conectados entre si, mas não necessariamente via conexões diretas.
+
+  Assim, sua função é analisar a tabela de rotas e custos e reportar quanto será o custo mínimo para garantir a implantação dessa nova tecnologia de conectividade.
+
+  A figura a seguir mostra um exmeplo de rede otimizada, as rota em vermelho são as rotas que devem ser implantadas:
+
+  [![alt text](https://s3.amazonaws.com/hr-assets/0/1533449015-1b07ea5ea6-grafo.png "Grafo movile")](https://s3.amazonaws.com/hr-assets/0/1533449015-1b07ea5ea6-grafo.png)
+
+  **Input Format**
+
+  A primeira linha conterá um número D que representa quantos datacenters das empresas do grupo Movile existe (os datacenters são representados por um número de identificação que começa do 1 e vai até D). Na linha seguinte haverá um número R que representa a quantidade de rotas existentes. Cada um das seguintes R linhas conterá 3 números (A B C) onde A e B representam identificadores de datacenter e C é o custo para criar aquela conexão entre os datacenters A e B. EX:
+  4
+  4
+  1 2 3
+  2 3 1
+  2 4 7
+  3 4 1
+
+  **Constraints**
+
+  Os valores dados são todos inteiros positivos
+  1 < D < 70
+  C < 50
+
+  **Output Format**
+
+  A saída deve conter um número que representa o custo mínimo possível para fazer a melhoria na rede. EX:
+  5
+
+  **Sample Input 0**
+  ```
+  4
+  4
+  1 2 3
+  2 3 1
+  2 4 7
+  3 4 1
+  ```
+  **Sample Output 0**
+  ```
+  5
+  ```
