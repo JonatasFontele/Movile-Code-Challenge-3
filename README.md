@@ -449,6 +449,7 @@ Desafio online de programação do Grupo Movile.
   **Input Format**
 
   A primeira linha conterá um número D que representa quantos datacenters das empresas do grupo Movile existe (os datacenters são representados por um número de identificação que começa do 1 e vai até D). Na linha seguinte haverá um número R que representa a quantidade de rotas existentes. Cada um das seguintes R linhas conterá 3 números (A B C) onde A e B representam identificadores de datacenter e C é o custo para criar aquela conexão entre os datacenters A e B. EX:
+  
   4
   4
   1 2 3
