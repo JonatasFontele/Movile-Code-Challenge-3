@@ -142,6 +142,7 @@ Desafio online de programação do Grupo Movile.
 > ## [**Saldo Promocional Movilepay**](https://www.hackerrank.com/contests/movile-code-challenge-3/challenges/saldo-promocional-movilepay)
 
 * saldo_promocional_movilepay.py
+
   Uma das atividades da MovilePay é a disponibilização de saldos promocionais para seus usuários. Os saldos promocionais podem ser disponibilizados em uma carteira digital através de depósitos e possuem um período de validade para serem consumidos.
 
   Para ser justo na hora de uma compra utilizando esses saldos promocionais, considere a seguinte regra para o consumo dos saldos:
