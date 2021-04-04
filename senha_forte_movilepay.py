@@ -35,6 +35,8 @@ def testar_password(n, password):
         print(valor_minimo)
 
 
-n = int(input())
-password = input()
-testar_password(n, password)
+if __name__ == '__main__':
+    n = int(input())
+    password = input()
+
+    testar_password(n, password)
