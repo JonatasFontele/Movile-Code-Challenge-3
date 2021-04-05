@@ -1,17 +1,13 @@
 import re
 
 
-def testar_password():
+def testar_password(n, password):
     # tamanho_minimo = 6
     numeros_minimo = 1
     minusculas_minimo = 1
     maiusculas_minimo = 1
     especial_char_minimo = 1
     valor_minimo = 0  # valor minimo de caracteres que precisam ser informados para que a senha seja considerada forte
-
-    # Evitar sombreamento de variável
-    n = int(input())
-    password = input()
 
     # Todos os caracteres de password devem respeitar [a-z], [A-Z], [0-9] e [!@#$%^&*()-+]
     if 1 <= n <= 100 and (re.match(r'^[a-zA-Z0-9!@#$%^&*()+-]+$', password)):
@@ -35,9 +31,14 @@ def testar_password():
         if (valor_minimo + len(password)) < tamanho_minimo:
             valor_minimo += (tamanho_minimo - (valor_minimo + len(password)))
         '''
-
         print(valor_minimo)
 
 
+def main():
+    n = int(input())
+    password = input()
+    testar_password(n, password)
+
+
 if __name__ == '__main__':
-    testar_password()
+    main()
