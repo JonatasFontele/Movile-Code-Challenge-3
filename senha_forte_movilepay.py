@@ -11,7 +11,7 @@ def testar_password(n, password):
 
     # Todos os caracteres de password devem respeitar [a-z], [A-Z], [0-9] e [!@#$%^&*()-+]
     if 1 <= n <= 100 and (re.match(r'^[a-zA-Z0-9!@#$%^&*()+-]+$', password)):
-        # Se todos os digitos numericos achados for menor que pelo menos 1, ou seja, se não houver.
+        # Se todos os digitos numericos achados forem menor que pelo menos 1, ou seja, se não houver.
         if len(re.findall(r"[0-9]", password)) < numeros_minimo:
             valor_minimo += 1
         # Se não houver pelo menos um caractere minusculo
@@ -24,13 +24,13 @@ def testar_password(n, password):
         if len(re.findall(r"[!@#$%^&*()+-]", password)) < especial_char_minimo:
             valor_minimo += 1
 
-        ''' # Acho que seria mais correto sugerir para a senha completar ate n ou ate o valor minimo
-            # Mas aparentemente a questao nao pede
-        if (valor_minimo + len(password)) < n:
-            valor_minimo += (n - (valor_minimo + len(password)))
-        if (valor_minimo + len(password)) < tamanho_minimo:
-            valor_minimo += (tamanho_minimo - (valor_minimo + len(password)))
-        '''
+        # Acho que seria mais correto sugerir para a senha completar ate n ou ate o valor minimo
+        # Mas aparentemente a questao nao pede
+        # if (valor_minimo + len(password)) < n:
+        #    valor_minimo += (n - (valor_minimo + len(password)))
+        # if (valor_minimo + len(password)) < tamanho_minimo:
+        #    valor_minimo += (tamanho_minimo - (valor_minimo + len(password)))
+
         print(valor_minimo)
 
 
